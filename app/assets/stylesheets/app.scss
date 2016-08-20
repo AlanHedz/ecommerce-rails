@@ -1,0 +1,46 @@
+$colors: (
+	green: #16a085,
+	grey: #5A6576,
+	other-grey: #E7ECEE,
+	blue: #058CC5,
+	red: #d2527f,
+	light-blue: #3498DB,
+	white: #fff,
+	teal: #009688,
+);
+
+@each $color_name, $color in $colors{
+	.#{$color-name}{
+		background-color: $color !important;
+	}
+	.#{$color-name}-text{
+		color: $color !important;
+	}
+	.has-#{$color-name}{
+		&.is-focused{
+			.form-control{
+				background-image: linear-gradient( $color, $color), linear-gradient(#D2D2D2, #D2D2D2) !important;
+				border-color: $color
+			}
+		}
+	}
+}
+.bold{
+	font-weight: bold;
+}
+.payment-btn{
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	padding: 1em 2em;
+	outline: none;
+}
+.paypal-btn{
+	background-color: #FE1935;
+}
+.card-btn{
+	background-color: #1D785B;
+}
+.close-parent{
+	cursor: pointer;
+}

@@ -1,0 +1,18 @@
+<div class="col-md-6 col-xs-10 col-sm-8 col-lg-5 center-block no-float">
+  <div class="card big-padding">
+    <h2 class="text-center">Iniciar Sesión</h2>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field form-group">
+        <%= f.email_field :email, autofocus: true, class:"form-control", placeholder:"Correo electronico" %>
+      </div>
+
+      <div class="field form-group">
+        <%= f.password_field :password, autocomplete: "off", class:"form-control", placeholder:"Contraseña" %>
+      </div>
+
+      <div class="actions form-group text-right">
+        <%= f.submit "Log in", class:"btn btn-info" %>
+      </div>
+    <% end %>
+    </div>
+</div>

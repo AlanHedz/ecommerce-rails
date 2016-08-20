@@ -1,0 +1,74 @@
+
+/* paddings */
+.big-padding{
+	padding: 2em;
+}
+.no-padding{
+	padding: 0;
+}
+.large-padding{
+	padding: 10px 15px;
+}
+.tall-padding{
+	padding: 10px 5px;
+}
+/* margins */
+.top-space{
+	margin-top: 1em;
+}
+.bottom-space{
+	margin-bottom: 1em;
+}
+.no-margin{
+	margin: 0;
+}
+.right-space{
+	margin-right: 1em;
+}
+/* Alineamieton */
+.no-float{
+	float: none !important;
+}
+.in-top{
+	vertical-align: top !important;
+}
+.inline-block{
+	float: none !important;
+	display: inline-block; 
+	vertical-align: middle;
+	margin-right: -4px;
+}
+.absolute{
+	position: absolute;
+}
+.relative{
+	position: relative;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right !important; 
+}
+/* Tamaños */
+.ultra-big{
+	font-size: 7em;
+}
+.bigger{
+	font-size: 4em;
+}
+.big{
+	font-size: 3em;
+}
+.medium{
+	font-size: 1.5em;
+}
+.normal{
+	font-size: 1.2em;
+}
+.small{
+	font-size: 14px;
+}

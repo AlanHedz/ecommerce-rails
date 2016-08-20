@@ -1,0 +1,10 @@
+= form_for @product, builder: BootstrapFormBuilder do |f|
+  = f.errors
+  = f.text_field :name
+  %smal Precio en centavos de dólar
+  = f.text_field :pricing
+  .form-group.is-empty.is-fileinput
+    %label{:for => "avatar", class:"control-label"} Sube tu avatar
+    = f.file_field :avatar, id:"avatar"
+  = f.text_area :description
+  = f.submit "Enviar"
